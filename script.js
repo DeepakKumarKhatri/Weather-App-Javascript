@@ -24,14 +24,23 @@ async function checkWeather(cityName){
             // update the background images
             if(data.weather[0].main == "Clouds"){
                 weather_icon.src = "/assests/clouds.png";
+                document.querySelector(".card").style.background = "linear-gradient(135deg, #B2BDCD, #485461)";
+
             }else if(data.weather[0].main == "Clear"){
                 weather_icon.src = "/assests/clear.png";
+                document.querySelector(".card").style.background = "linear-gradient(135deg, #00feba, #5b548a)";
+
             }else if(data.weather[0].main == "Rain"){
                 weather_icon.src = "/assests/rain.png";
+                document.querySelector(".card").style.background = "linear-gradient(135deg, #76b852, #8DC26F)";
+
             }else if(data.weather[0].main == "Drizzle"){
                 weather_icon.src = "/assests/drizzle.png";
+                document.querySelector(".card").style.background = "linear-gradient(135deg, #7F7FD5, #86A8E7, #91EAE4)";
+            
             }else if(data.weather[0].main == "Mist"){
                 weather_icon.src = "/assests/mist.png";
+                document.querySelector(".card").style.background = "linear-gradient(135deg, #DAD299, #B0DAB9)";
             }
     
             document.querySelector(".weather").style.display = "block";
