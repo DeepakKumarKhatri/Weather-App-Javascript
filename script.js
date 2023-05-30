@@ -41,9 +41,22 @@ async function checkWeather(cityName){
         document.querySelector(".empty-string-error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
     }
-
-    
 }
+
+searchBox.addEventListener("click", function () {
+    if (window.getSelection().toString() === "") {
+        // Select text if it is not already selected
+        this.select();
+    }
+});
+  
+searchBox.addEventListener("dblclick", function () {
+    if (window.getSelection().toString() !== "") {
+        // Clear text selection if it is already selected
+        window.getSelection().empty();
+    }
+});
+
 
 searchBox.addEventListener("keyup", function(event) {
     event.preventDefault();
