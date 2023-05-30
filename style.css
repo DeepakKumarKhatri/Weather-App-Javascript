@@ -128,7 +128,7 @@ body{
 /* Responsive Styles */
 @media (max-width: 768px) {
     body{
-        padding-top: 30%;
+        padding-top: 25%;
     }
     .card {
       width: 95%;
@@ -170,7 +170,7 @@ body{
 @media (max-width: 480px) {
 
     body{
-        padding-top: 30%;
+        padding-top: 25%;
     }
     .card {
       width: 90%;
