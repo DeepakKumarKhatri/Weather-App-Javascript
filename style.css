@@ -12,7 +12,7 @@ body{
     max-width: 470px;
     background: linear-gradient(135deg, #00feba, #5b548a);
     margin: 100px auto 0;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 40px 35px;
     text-align: center;
 }
@@ -95,11 +95,12 @@ body{
     display: none;
 }
 
-.error{
+.city-error, .empty-string-error{
     text-align: left;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: 900;
     margin-top: 10px;
-    color: #ebfffc;
+    color: #ffebeb;
     display: none;
 }
