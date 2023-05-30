@@ -40,6 +40,7 @@ async function checkWeather(cityName){
     }else{
         document.querySelector(".empty-string-error").style.display = "block";
         document.querySelector(".weather").style.display = "none";
+        document.querySelector(".city-error").style.display = "none";
     }
 }
 
